@@ -1,0 +1,7 @@
+all: Main.class
+example.class: Main.java
+	javac -d . -classpath . Main.java
+run:
+	java Main $(ARG1)
+clean:	
+	rm -f *.class
